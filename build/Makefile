@@ -128,29 +128,53 @@ CNC_3D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/build
 .PHONY : CNC_3D/fast
 
-src/Control/mainControl.obj: src/Control/mainControl.cpp.obj
-.PHONY : src/Control/mainControl.obj
+src/Common/LoadDrillBit.obj: src/Common/LoadDrillBit.cpp.obj
+.PHONY : src/Common/LoadDrillBit.obj
 
 # target to build an object file
-src/Control/mainControl.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.obj
-.PHONY : src/Control/mainControl.cpp.obj
+src/Common/LoadDrillBit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj
+.PHONY : src/Common/LoadDrillBit.cpp.obj
 
-src/Control/mainControl.i: src/Control/mainControl.cpp.i
-.PHONY : src/Control/mainControl.i
+src/Common/LoadDrillBit.i: src/Common/LoadDrillBit.cpp.i
+.PHONY : src/Common/LoadDrillBit.i
 
 # target to preprocess a source file
-src/Control/mainControl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.i
-.PHONY : src/Control/mainControl.cpp.i
+src/Common/LoadDrillBit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.i
+.PHONY : src/Common/LoadDrillBit.cpp.i
 
-src/Control/mainControl.s: src/Control/mainControl.cpp.s
-.PHONY : src/Control/mainControl.s
+src/Common/LoadDrillBit.s: src/Common/LoadDrillBit.cpp.s
+.PHONY : src/Common/LoadDrillBit.s
 
 # target to generate assembly for a file
-src/Control/mainControl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.s
-.PHONY : src/Control/mainControl.cpp.s
+src/Common/LoadDrillBit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.s
+.PHONY : src/Common/LoadDrillBit.cpp.s
+
+src/Program.obj: src/Program.cpp.obj
+.PHONY : src/Program.obj
+
+# target to build an object file
+src/Program.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Program.cpp.obj
+.PHONY : src/Program.cpp.obj
+
+src/Program.i: src/Program.cpp.i
+.PHONY : src/Program.i
+
+# target to preprocess a source file
+src/Program.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Program.cpp.i
+.PHONY : src/Program.cpp.i
+
+src/Program.s: src/Program.cpp.s
+.PHONY : src/Program.s
+
+# target to generate assembly for a file
+src/Program.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Program.cpp.s
+.PHONY : src/Program.cpp.s
 
 # Help Target
 help:
@@ -161,9 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CNC_3D
-	@echo ... src/Control/mainControl.obj
-	@echo ... src/Control/mainControl.i
-	@echo ... src/Control/mainControl.s
+	@echo ... src/Common/LoadDrillBit.obj
+	@echo ... src/Common/LoadDrillBit.i
+	@echo ... src/Common/LoadDrillBit.s
+	@echo ... src/Program.obj
+	@echo ... src/Program.i
+	@echo ... src/Program.s
 .PHONY : help
 
 

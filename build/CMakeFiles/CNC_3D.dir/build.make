@@ -68,34 +68,51 @@ include CMakeFiles/CNC_3D.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CNC_3D.dir/flags.make
 
-CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
-CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
-CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.obj: D:/dev/CNC/CNC_3D/src/Control/mainControl.cpp
-CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Control\mainControl.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Control\mainControl.cpp.obj -c D:\dev\CNC\CNC_3D\src\Control\mainControl.cpp
+CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
+CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
+CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj: D:/dev/CNC/CNC_3D/src/Common/LoadDrillBit.cpp
+CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Common\LoadDrillBit.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Common\LoadDrillBit.cpp.obj -c D:\dev\CNC\CNC_3D\src\Common\LoadDrillBit.cpp
 
-CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Control\mainControl.cpp > CMakeFiles\CNC_3D.dir\src\Control\mainControl.cpp.i
+CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Common\LoadDrillBit.cpp > CMakeFiles\CNC_3D.dir\src\Common\LoadDrillBit.cpp.i
 
-CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Control\mainControl.cpp -o CMakeFiles\CNC_3D.dir\src\Control\mainControl.cpp.s
+CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Common\LoadDrillBit.cpp -o CMakeFiles\CNC_3D.dir\src\Common\LoadDrillBit.cpp.s
+
+CMakeFiles/CNC_3D.dir/src/Program.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
+CMakeFiles/CNC_3D.dir/src/Program.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
+CMakeFiles/CNC_3D.dir/src/Program.cpp.obj: D:/dev/CNC/CNC_3D/src/Program.cpp
+CMakeFiles/CNC_3D.dir/src/Program.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CNC_3D.dir/src/Program.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Program.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Program.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Program.cpp.obj -c D:\dev\CNC\CNC_3D\src\Program.cpp
+
+CMakeFiles/CNC_3D.dir/src/Program.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Program.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Program.cpp > CMakeFiles\CNC_3D.dir\src\Program.cpp.i
+
+CMakeFiles/CNC_3D.dir/src/Program.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Program.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Program.cpp -o CMakeFiles\CNC_3D.dir\src\Program.cpp.s
 
 # Object files for target CNC_3D
 CNC_3D_OBJECTS = \
-"CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.obj"
+"CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj" \
+"CMakeFiles/CNC_3D.dir/src/Program.cpp.obj"
 
 # External object files for target CNC_3D
 CNC_3D_EXTERNAL_OBJECTS =
 
-CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Control/mainControl.cpp.obj
+CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj
+CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Program.cpp.obj
 CNC_3D.exe: CMakeFiles/CNC_3D.dir/build.make
 CNC_3D.exe: CMakeFiles/CNC_3D.dir/linkLibs.rsp
 CNC_3D.exe: CMakeFiles/CNC_3D.dir/objects1.rsp
 CNC_3D.exe: CMakeFiles/CNC_3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable CNC_3D.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CNC_3D.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CNC_3D.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

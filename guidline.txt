@@ -1,2 +1,0 @@
-Build 
-D:\dev\CNC\CNC_3D\build>cmake .. -G "MinGW Makefiles"

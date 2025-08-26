@@ -1,15 +1,14 @@
+#pragma once
 #include <string>
 
-
-using namespace std;
 namespace Model {
     struct DrillBits {
         int id;
-        string name;
-        string type;
+        std::string name;
+        std::string type;
         double diameter;
         int flute_count;
-        string material;
+        std::string material;
         double length;
         double stick_out;
         int max_rpm;
@@ -17,6 +16,6 @@ namespace Model {
         double recommended_plunge;
         double step_over;
         double step_down;
-        string comment;
+        std::string comment;
     };
 }
