@@ -159,14 +159,51 @@ For Vietnamese specification (full 15 sections), see [docs/SPEC_VN.md](docs/SPEC
   - 500 W – 1.5 kW spindle, ER11 collets, tool clamps, dust shoe, workholding
 
 ## Software and Firmware
-- Option 1: GRBL (Arduino Uno)
-  - Easy to deploy, large community, stable
-- Option 2: grbl_ESP32
-  - Wi‑Fi connectivity, higher performance, more I/O
-- Option 3: LinuxCNC (PC/SBC)
-  - Advanced: kinematics, HAL, hard real-time control
 
-Recommended G‑code senders: UGS, CNCjs, bCNC. CAM: Fusion 360, FreeCAD Path, Vectric, FlatCAM (for PCBs).
+### Host Software (Raspberry Pi)
+**Recommended: CNCjs**
+- Web-based interface
+- G-code streaming and visualization
+- Job queue management
+- Macros and widgets
+- Installation: `sudo npm install -g cncjs`
+- Access: `http://raspberrypi.local:8000`
+
+**Alternative Options:**
+- Custom Flask/FastAPI (Python) web app
+- Custom Node.js/Express server
+- bCNC (Python desktop app)
+- Universal Gcode Sender (Java)
+
+### Firmware (MCU)
+**Option 1: grblHAL on STM32F407 (Recommended)**
+- Low jitter, high precision
+- Excellent real-time performance
+- Well-documented, stable
+- Repository: https://github.com/grblHAL/STM32F4xx
+- Build: STM32CubeIDE or arm-none-eabi-gcc
+- Flash: ST-Link programmer
+
+**Option 2: FluidNC on ESP32**
+- Built-in Wi-Fi and web interface
+- YAML configuration
+- Good for prototyping and home use
+- Repository: https://github.com/bdring/FluidNC
+- Build: PlatformIO or Arduino IDE
+- Flash: USB cable
+
+**Option 3: Custom Firmware**
+- Full control over features
+- Based on grblHAL or g2core
+- Higher development effort
+
+### CAM Software
+- **Fusion 360** - Free for hobbyists, full CAD/CAM
+- **FreeCAD Path** - Open-source, 2.5D-3D
+- **VCarve** - Excellent for signage and engraving
+- **Estlcam** - Affordable (~$60), easy to use
+
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for detailed build instructions.
 
 ## Assembly and Wiring
 - Mechanics:
@@ -226,22 +263,70 @@ G0 Z10
 - Ground the frame; manage combustible dust; mitigate noise.
 - Dry-run (air-cut) before real cuts to verify toolpaths.
 
-## Project Structure (suggested)
-```
-.
-├─ firmware/         # GRBL/grbl_ESP32 configs, flashing scripts
-├─ hardware/
-│  ├─ cad/           # 3D, DXF, STEP for frame/plates
-│  ├─ bom/           # Bill of Materials
-│  └─ wiring/        # Wiring diagrams, pinouts
-├─ cnc/
-│  ├─ post/          # Custom post-processors (if any)
-│  └─ samples/       # Sample G-code, test patterns
-├─ docs/
-│  ├─ setup/         # Assembly and calibration guides
-│  └─ safety/        # Safety procedures
-└─ README.md
-```
+## Documentation
+
+This project includes comprehensive documentation:
+
+### Core Documentation
+- **[docs/SPEC_VN.md](docs/SPEC_VN.md)** - Complete Vietnamese specification (15 sections)
+  - Goals and scope
+  - Mechanical structure
+  - Electrical system
+  - Software architecture
+  - Operating parameters
+  - Formulas and calculations
+  - Safety and EMI management
+  - Development roadmap
+  - Bill of materials
+  - STM32 vs ESP32 comparison
+  - And more...
+
+- **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** - System architecture
+  - Pi + MCU distributed control
+  - Communication protocols
+  - Firmware options
+  - Build and flash instructions
+  - Configuration examples
+
+- **[ENV_SETUP.md](ENV_SETUP.md)** - Environment setup guide
+  - Toolchain installation
+  - Raspberry Pi setup
+  - STM32 firmware flashing
+  - ESP32 firmware flashing
+  - Cross-compilation
+  - Troubleshooting
+
+### Hardware Documentation
+- **[docs/hardware/BOM.md](docs/hardware/BOM.md)** - Complete Bill of Materials
+  - All parts with specifications
+  - Price estimates
+  - Supplier recommendations
+  - Tool requirements
+
+### Safety & Operations
+- **[docs/SAFETY_EMI.md](docs/SAFETY_EMI.md)** - Safety guidelines and EMI management
+  - General safety rules
+  - Electrical safety
+  - Mechanical safety
+  - EMI mitigation strategies
+  - Emergency procedures
+  - Maintenance safety
+
+### Project Planning
+- **[docs/ROADMAP.md](docs/ROADMAP.md)** - Development roadmap
+  - Phase 1: MVP 3-axis (2-3 months)
+  - Phase 2: Optimization (1-2 months)
+  - Phase 3: 4-axis expansion (2-3 months)
+  - Phase 4: 5-axis capability (3-6 months)
+  - Phase 5: Production ready (ongoing)
+  - Risk management
+  - Success metrics
+
+### Additional Resources
+- **README.md** - This file (project overview)
+- **src/** - Application source code
+- **firmware/** - MCU firmware (planned)
+- **raspberry_pi/** - Host software (planned)
 
 ## Roadmap
 - V1: 2040 frame, GRBL + TMC2209, 500–800 W spindle, homing + hard limits
@@ -250,8 +335,37 @@ G0 Z10
 - Software: ESP32 web UI, advanced probing macros, auto surfacing
 
 ## Contributing
-- Issues/PRs welcome: bugs, docs, tuning, mechanical/electrical design.
-- Guidelines: describe changes clearly; include images/diagrams when helpful; follow style/format conventions.
+
+We welcome contributions! Here's how you can help:
+
+### Reporting Issues
+- Use GitHub Issues for bug reports
+- Include: Machine specs, firmware version, G-code that caused issue
+- Attach photos/videos if relevant
+
+### Code Contributions
+- Fork the repository
+- Create feature branch: `git checkout -b feature/amazing-feature`
+- Follow existing code style
+- Test your changes thoroughly
+- Submit pull request with clear description
+
+### Documentation
+- Fix typos or clarify instructions
+- Add translations (English, Vietnamese, etc.)
+- Share your build photos and experiences
+
+### Hardware Improvements
+- Share CAD designs for upgrades
+- Document modifications
+- Post to Discussions for community feedback
+
+### Community
+- Help others in Issues and Discussions
+- Share your projects and G-code
+- Write tutorials or blog posts
+
+**Please read [docs/ROADMAP.md](docs/ROADMAP.md) to see current development priorities.**
 
 ## License
 - Source and documentation under MIT license (unless noted otherwise in specific folders).
