@@ -1,3 +1,0 @@
-C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe -E rm -f CMakeFiles\CNC_3D.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\CNC_3D.dir/objects.a @CMakeFiles\CNC_3D.dir\objects1.rsp
-C:\MinGW\bin\c++.exe -g -O0 -g -fno-omit-frame-pointer -DDEBUG -Wl,--whole-archive CMakeFiles\CNC_3D.dir/objects.a -Wl,--no-whole-archive -o CNC_3D.exe -Wl,--out-implib,libCNC_3D.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CNC_3D.dir\linkLibs.rsp

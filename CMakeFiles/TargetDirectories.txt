@@ -1,3 +1,0 @@
-D:/dev/CNC/CNC_3D/CMakeFiles/CNC_3D.dir
-D:/dev/CNC/CNC_3D/CMakeFiles/edit_cache.dir
-D:/dev/CNC/CNC_3D/CMakeFiles/rebuild_cache.dir

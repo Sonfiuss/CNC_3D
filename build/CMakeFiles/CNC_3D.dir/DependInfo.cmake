@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/dev/CNC/CNC_3D/src/Common/LoadDrillBit.cpp" "CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj" "gcc" "CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj.d"
-  "D:/dev/CNC/CNC_3D/src/Program.cpp" "CMakeFiles/CNC_3D.dir/src/Program.cpp.obj" "gcc" "CMakeFiles/CNC_3D.dir/src/Program.cpp.obj.d"
+  "/home/runner/work/CNC_3D/CNC_3D/src/Common/LoadDrillBit.cpp" "CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.o" "gcc" "CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.o.d"
+  "/home/runner/work/CNC_3D/CNC_3D/src/Program.cpp" "CMakeFiles/CNC_3D.dir/src/Program.cpp.o" "gcc" "CMakeFiles/CNC_3D.dir/src/Program.cpp.o.d"
+  "" "CNC_3D" "gcc" "CMakeFiles/CNC_3D.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
