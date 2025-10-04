@@ -39,3 +39,22 @@
 
 # debug information files
 *.dwo
+
+# Build directories
+build/
+build_debug/
+build_release/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+build.ninja
+*.ninja
+Makefile
+compile_commands.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

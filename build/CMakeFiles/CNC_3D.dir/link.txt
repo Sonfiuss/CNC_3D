@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -O0 -g -fno-omit-frame-pointer -DDEBUG -Wl,--dependency-file=CMakeFiles/CNC_3D.dir/link.d CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.o CMakeFiles/CNC_3D.dir/src/Program.cpp.o -o CNC_3D
