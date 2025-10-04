@@ -28,6 +28,19 @@ An open-source 3-axis CNC (X/Y/Z, expandable to 4-5 axes) for woodworking applic
 
 ---
 
+## Quick Start
+
+**New to CNC or want to get started quickly?**
+
+👉 **[Quick Start Guide (Vietnamese)](docs/QUICKSTART_VN.md)** - Step-by-step guide from parts to first cut
+
+**For detailed information:**
+- Read the [Full Specification (Vietnamese)](docs/SPEC_VN.md) for comprehensive design details
+- Follow the [Development Roadmap](docs/ROADMAP.md) for phased implementation
+- Review [Safety Guidelines](docs/SAFETY_EMI.md) before starting
+
+---
+
 ## Overview
 
 ### Project Goal
