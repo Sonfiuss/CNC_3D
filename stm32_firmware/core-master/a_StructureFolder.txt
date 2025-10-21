@@ -1,0 +1,190 @@
+.gitattributes
+Quy định thuộc tính Git (normalization, diff rules) cho repository.
+
+.gitignore
+Xác định các file/thư mục bị bỏ qua khi commit.
+
+CMakeLists.txt
+Định nghĩa cấu hình build (CMake): mục tiêu biên dịch, tùy chọn, include paths.
+
+COPYING
+Giấy phép GPL v3.
+
+README.md
+Giới thiệu dự án, mục tiêu, cách tích hợp, định hướng kiến trúc.
+
+alarms.c / alarms.h
+Định nghĩa mã và xử lý alarm (các trạng thái lỗi nghiêm trọng yêu cầu người dùng can thiệp).
+Cung cấp ánh xạ mã -> thông điệp.
+
+canbus.c / canbus.h
+Lớp giao tiếp CAN bus (gửi/nhận frame, đăng ký nút, xử lý sự kiện).
+
+changelog.md
+Lịch sử thay đổi phiên bản.
+
+config.h
+Tùy biến compile-time (macro enable/disable tính năng, giới hạn, mặc định hệ thống).
+
+coolant_control.c / coolant_control.h
+Điều khiển hệ thống làm mát: M7 (mist), M8 (flood), trạng thái & phát sự kiện.
+
+core_handlers.h
+Khai báo hook/callback lõi để driver hoặc plugin gắn vào (event handlers).
+
+crc.c / crc.h
+Tính CRC (checksum) cho giao thức hoặc lưu trữ dữ liệu tin cậy.
+
+crossbar.c / crossbar.h
+Cơ chế trừu tượng ánh xạ động các tín hiệu logic (step, dir, limit, v.v.) sang chân vật lý.
+
+Hỗ trợ tái định tuyến linh hoạt cho nhiều nền tảng.
+
+driver_opts.h / driver_opts2.h
+Các lựa chọn/biến cấu hình chuyên sâu cho driver nền tảng phần cứng.
+
+errors.c / errors.h
+Mã lỗi không ở mức alarm (ví dụ sai cú pháp, tham số không hợp lệ) và hàm xuất thông điệp.
+
+expanders_init.h
+Khởi tạo hoặc đăng ký mở rộng IO (IO expanders, shift registers…).
+
+fs_device.c
+Lớp trừu tượng thiết bị file system: mount, read, seek, tích hợp VFS.
+
+gcode.c / gcode.h
+Parser và bộ xử lý G-code đầy đủ: lệnh motion, modal groups, kiểm tra hợp lệ, nội suy.
+
+Quản lý modal state, chuyển giao cho planner/motion.
+
+grbl.h
+Header tập trung: include hạt nhân các phần chính, macro toàn cục.
+
+grbllib.c / grbllib.h
+Interface thư viện để nhúng grblHAL vào ứng dụng khác (API mức cao).
+
+hal.h
+HAL (Hardware Abstraction Layer): cấu trúc hàm driver phải cung cấp (timer, IO, serial, PWM…).
+
+ioports.c / ioports.h
+Quản lý cổng vào/ra logic & analog: đăng ký, claim, capabilities, gán nhãn.
+
+kinematics.h + thư mục kinematics/
+Khung mở rộng cho kinematics phi tuyến (CoreXY, Delta, SCARA…) nếu triển khai.
+
+machine_limits.c / machine_limits.h
+Áp dụng giới hạn hành trình, soft limits, kiểm tra trước chuyển động.
+
+messages.c / messages.h
+Bảng thông điệp chuẩn hệ thống gửi ra host (status, info, cảnh báo).
+
+modbus.c / modbus.h / modbus_rtu.c
+Giao tiếp Modbus RTU: build frame, parse, timeout, tích hợp kênh dữ liệu phụ.
+
+motion_control.c / motion_control.h
+Điều phối lệnh chuyển động ở mức thời gian thực: enqueue, trạng thái chuyển tiếp, sync.
+
+motor_pins.h
+Bản đồ chân động cơ (step/dir/enable) – macro hoặc cấu trúc mô tả pinout.
+
+my_plugin.c
+Ví dụ plugin mẫu để người dùng phát triển mở rộng (hook vào sự kiện).
+
+ngc_expr.c / ngc_expr.h
+Bộ đánh giá biểu thức (số học, tham số #, macro trong G-code).
+
+ngc_flowctrl.c / ngc_flowctrl.h
+Quản lý cấu trúc điều khiển nâng cao của G-code (IF/THEN/ELSE, WHILE, macro).
+
+ngc_params.c / ngc_params.h
+Lưu/truy xuất tham số G-code (#variables, hệ tọa độ, offsets).
+
+nuts_bolts.c / nuts_bolts.h
+Hàm tiện ích nền tảng: toán học, chuỗi, clamp, chuyển đổi đơn vị.
+
+nvs.h / nvs_buffer.c / nvs_buffer.h
+Lưu trữ không mất nguồn (Non-Volatile Storage): phân bổ, đọc/ghi khối cấu hình.
+
+override.c / override.h
+Quản lý các override chạy thời gian thực: feed, rapid, spindle, jog speed.
+
+pid.c / pid.h
+Bộ điều khiển PID (ví dụ điều chỉnh tốc độ spindle hoặc trục phụ có phản hồi).
+
+pin_bits_masks.h
+Macro/định nghĩa bit mask cho thao tác trên tập hợp pin/tín hiệu.
+
+planner.c / planner.h
+Planner quỹ đạo: lookahead, tính gia tốc, profile vận tốc, phân mảnh đường cong.
+
+platform.h
+Trừu tượng điều kiện nền tảng build (compiler, MCU differences).
+
+plugins.h / plugins_init.h
+Hệ thống đăng ký plugin: API, init, hook điểm mở rộng.
+
+probe.h
+Định nghĩa giao diện và trạng thái đầu dò (touch probe) cho các chu trình probing.
+
+protocol.c / protocol.h
+Lớp giao thức giao tiếp với host: đọc dòng, phân loại real-time vs buffered, phản hồi.
+
+regex.c / regex.h
+Thực thi đơn giản cho biểu thức chính quy phục vụ parsing nâng cao (nếu dùng).
+
+report.c / report.h
+Tạo chuỗi báo cáo: trạng thái máy, tọa độ, overrides, cấu hình, danh sách file.
+
+rgb.h
+Điều khiển đèn RGB/LED trạng thái (nếu phần cứng hỗ trợ).
+
+settings.c / settings.h
+Hệ thống cấu hình: định nghĩa, đăng ký, parse, validate, lưu, callback khi thay đổi.
+
+sleep.c / sleep.h
+Chế độ ngủ/giảm năng lượng và phục hồi trạng thái.
+
+spindle_control.c / spindle_control.h
+Quản lý spindle đa kênh: đăng ký nhiều spindle, PWM, linearization, at-speed detection, override, encoder binding, laser mode.
+
+spindle_sync.h
+Khung đồng bộ spindle với chuyển động (threading, feed-per-rev…).
+
+state_machine.c / state_machine.h
+Quản lý trạng thái vĩ mô: chuyển đổi Idle/Run/Hold/Alarm/Estop/Sleep an toàn.
+
+stepdir_map.h
+Ánh xạ logic step/dir tới bố trí trục linh hoạt (gộp/trộn hoặc thứ tự khác).
+
+stepper.c / stepper.h
+Trình điều khiển tạo xung bước thời gian thực: ISR timing, acceleration tick, direction set.
+
+stepper2.c / stepper2.h
+Biến thể hoặc mở rộng stepper engine (multi-instance hoặc tính năng đặc thù).
+
+stream.c / stream.h
+Lớp trừu tượng các “nguồn” stream (serial, USB, network) và multiplexing.
+
+stream_file.c / stream_file.h
+Stream G-code từ file hệ thống (playback).
+
+stream_json.c / stream_json.h
+Stream và giao tiếp định dạng JSON (giao thức điều khiển kiểu API nâng cao).
+
+stream_passthru.c / stream_passthru.h
+Chế độ passthrough (chuyển thẳng dữ liệu không parse) – dùng cho thiết bị phụ hoặc cập nhật firmware.
+
+strutils.c / strutils.h
+Tiện ích chuỗi: tách, trim, parse số, format.
+
+system.c / system.h
+Tầng hệ thống: cờ trạng thái toàn cục, real-time flags, khởi tạo lõi, xử lý interrupt-level events.
+
+task.h
+Khái niệm task/deferred execution (hẹn chạy hàm khi startup hoặc theo sự kiện).
+
+tool_change.c / tool_change.h
+Logic thay dao: M6, trình tự an toàn, lưu/khôi phục trạng thái trục.
+
+vfs.c / vfs.h
+Virtual File System: trừu tượng nhiều backend (SD, flash, memory) + liệt kê, mở, đọc, seek.

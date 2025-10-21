@@ -51,7 +51,7 @@ An open-source 3-axis CNC (X/Y/Z) for woodworking, plastics, acrylic, light alum
 - Speed:
   - Rapids 1000–3000 mm/min (safe baseline); cutting per material/tooling
 
-Note: Values vary with frame, screw type, drivers, and your setup.
+note: Values vary with frame, screw type, drivers, and your setup.
 
 ## System Architecture
 - Mechanics: 2040/2060/2080 aluminum extrusions, T‑slot/MDF spoilboard, lead screw/timing belt, linear rails.

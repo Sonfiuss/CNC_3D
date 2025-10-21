@@ -18,6 +18,7 @@ file(GLOB_RECURSE UTILS_SRC src/Utils/*.cpp)
 file(GLOB_RECURSE LIB_SRC src/Lib/*.cpp)
 file(GLOB_RECURSE COMMON_SRC src/Common/*.cpp)
 set(PROGRAM_SRC src/Program.cpp)
+file(GLOB_RECURSE REPOSITORY_SRC src/Repository/*.cpp)
 
 include_directories(
     src/Model
@@ -26,6 +27,7 @@ include_directories(
     src/Utils
     src/Lib
     src/Config
+    src/Repository
 )
 
 add_executable(CNC_3D
@@ -35,6 +37,7 @@ add_executable(CNC_3D
     ${LIB_SRC}
     ${COMMON_SRC}
     ${PROGRAM_SRC}
+    ${REPOSITORY_SRC}
 )
 
 # Target-specific compile options (ensures flags even if multi-config generator later)

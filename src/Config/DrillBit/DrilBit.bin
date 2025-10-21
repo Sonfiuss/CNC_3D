@@ -1,1 +1,8 @@
 100001|Flat End Mill 6mm|flat_end_mill|6.0|2|carbide|50.0|35.0|18000|1200|300|3.0|2.0|For edge cutting, soft wood
+100002|Flat End Mill 3mm|flat_end_mill|3.0|2|carbide|45.0|12.0|24000|900|250|1.5|1.2|Detail passes, plywood
+100003|Ball Nose 6mm|ball_nose|6.0|2|carbide|55.0|30.0|20000|1100|280|2.5|2.4|3D finishing, hardwood
+100004|V-Bit 90deg 12.7mm|v_bit|12.7|2|carbide|60.0|15.0|18000|1500|400|3.0|4.0|Sign carving, large lettering
+100005|Twist Drill 3mm|twist_drill|3.0|2|HSS|70.0|25.0|8000|300|150|1.0|1.0|Drilling pilot holes
+100006|Engraving Bit 30deg 0.2mm Tip|engraving_bit|0.2|1|carbide|40.0|5.0|24000|300|120|0.2|0.15|Fine text engraving PCB
+100007|Compression End Mill 6mm|compression_end_mill|6.0|2|carbide|60.0|22.0|18000|1600|320|2.0|2.4|Clean both-face plywood
+100008|Roughing End Mill 8mm|roughing_end_mill|8.0|3|carbide|65.0|35.0|16000|1800|400|3.5|3.2|Fast stock

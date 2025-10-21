@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CNC_3D Debug (Integrated)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_debug/CNC_3D.exe",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/winlibs/mingw64/bin/gdb.exe",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "environment": [
+        { "name": "TERM", "value": "xterm" }
+      ]
+    },
+    {
+      "name": "CNC_3D Debug (External)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_debug/CNC_3D.exe",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/winlibs/mingw64/bin/gdb.exe",
+      "externalConsole": true,
+      "stopAtEntry": false
+    }
+  ]
+}

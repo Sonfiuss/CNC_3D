@@ -68,11 +68,116 @@ include CMakeFiles/CNC_3D.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CNC_3D.dir/flags.make
 
+CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
+CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
+CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.obj: D:/dev/CNC/CNC_3D/src/Model/Enum/GcodeEnum.cpp
+CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Model\Enum\GcodeEnum.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Model\Enum\GcodeEnum.cpp.obj -c D:\dev\CNC\CNC_3D\src\Model\Enum\GcodeEnum.cpp
+
+CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Model\Enum\GcodeEnum.cpp > CMakeFiles\CNC_3D.dir\src\Model\Enum\GcodeEnum.cpp.i
+
+CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Model\Enum\GcodeEnum.cpp -o CMakeFiles\CNC_3D.dir\src\Model\Enum\GcodeEnum.cpp.s
+
+CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
+CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
+CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.obj: D:/dev/CNC/CNC_3D/src/Model/GcodeParser.cpp
+CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Model\GcodeParser.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Model\GcodeParser.cpp.obj -c D:\dev\CNC\CNC_3D\src\Model\GcodeParser.cpp
+
+CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Model\GcodeParser.cpp > CMakeFiles\CNC_3D.dir\src\Model\GcodeParser.cpp.i
+
+CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Model\GcodeParser.cpp -o CMakeFiles\CNC_3D.dir\src\Model\GcodeParser.cpp.s
+
+CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
+CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
+CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.obj: D:/dev/CNC/CNC_3D/src/Model/Gcodecomand.cpp
+CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Model\Gcodecomand.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Model\Gcodecomand.cpp.obj -c D:\dev\CNC\CNC_3D\src\Model\Gcodecomand.cpp
+
+CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Model\Gcodecomand.cpp > CMakeFiles\CNC_3D.dir\src\Model\Gcodecomand.cpp.i
+
+CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Model\Gcodecomand.cpp -o CMakeFiles\CNC_3D.dir\src\Model\Gcodecomand.cpp.s
+
+CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
+CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
+CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.obj: D:/dev/CNC/CNC_3D/src/Control/ProcessGcode.cpp
+CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Control\ProcessGcode.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Control\ProcessGcode.cpp.obj -c D:\dev\CNC\CNC_3D\src\Control\ProcessGcode.cpp
+
+CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Control\ProcessGcode.cpp > CMakeFiles\CNC_3D.dir\src\Control\ProcessGcode.cpp.i
+
+CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Control\ProcessGcode.cpp -o CMakeFiles\CNC_3D.dir\src\Control\ProcessGcode.cpp.s
+
+CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
+CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
+CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.obj: D:/dev/CNC/CNC_3D/src/Utils/AppEnv.cpp
+CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Utils\AppEnv.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Utils\AppEnv.cpp.obj -c D:\dev\CNC\CNC_3D\src\Utils\AppEnv.cpp
+
+CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Utils\AppEnv.cpp > CMakeFiles\CNC_3D.dir\src\Utils\AppEnv.cpp.i
+
+CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Utils\AppEnv.cpp -o CMakeFiles\CNC_3D.dir\src\Utils\AppEnv.cpp.s
+
+CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
+CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
+CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.obj: D:/dev/CNC/CNC_3D/src/Utils/Const.cpp
+CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Utils\Const.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Utils\Const.cpp.obj -c D:\dev\CNC\CNC_3D\src\Utils\Const.cpp
+
+CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Utils\Const.cpp > CMakeFiles\CNC_3D.dir\src\Utils\Const.cpp.i
+
+CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Utils\Const.cpp -o CMakeFiles\CNC_3D.dir\src\Utils\Const.cpp.s
+
+CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
+CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
+CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.obj: D:/dev/CNC/CNC_3D/src/Utils/Log.cpp
+CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Utils\Log.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Utils\Log.cpp.obj -c D:\dev\CNC\CNC_3D\src\Utils\Log.cpp
+
+CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Utils\Log.cpp > CMakeFiles\CNC_3D.dir\src\Utils\Log.cpp.i
+
+CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Utils\Log.cpp -o CMakeFiles\CNC_3D.dir\src\Utils\Log.cpp.s
+
 CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
 CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
 CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj: D:/dev/CNC/CNC_3D/src/Common/LoadDrillBit.cpp
 CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Common\LoadDrillBit.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Common\LoadDrillBit.cpp.obj -c D:\dev\CNC\CNC_3D\src\Common\LoadDrillBit.cpp
 
 CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.i: cmake_force
@@ -87,7 +192,7 @@ CMakeFiles/CNC_3D.dir/src/Program.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
 CMakeFiles/CNC_3D.dir/src/Program.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
 CMakeFiles/CNC_3D.dir/src/Program.cpp.obj: D:/dev/CNC/CNC_3D/src/Program.cpp
 CMakeFiles/CNC_3D.dir/src/Program.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CNC_3D.dir/src/Program.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CNC_3D.dir/src/Program.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Program.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Program.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Program.cpp.obj -c D:\dev\CNC\CNC_3D\src\Program.cpp
 
 CMakeFiles/CNC_3D.dir/src/Program.cpp.i: cmake_force
@@ -98,21 +203,52 @@ CMakeFiles/CNC_3D.dir/src/Program.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Program.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Program.cpp -o CMakeFiles\CNC_3D.dir\src\Program.cpp.s
 
+CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.obj: CMakeFiles/CNC_3D.dir/flags.make
+CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.obj: CMakeFiles/CNC_3D.dir/includes_CXX.rsp
+CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.obj: D:/dev/CNC/CNC_3D/src/Repository/GcodeReader.cpp
+CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.obj: CMakeFiles/CNC_3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.obj -MF CMakeFiles\CNC_3D.dir\src\Repository\GcodeReader.cpp.obj.d -o CMakeFiles\CNC_3D.dir\src\Repository\GcodeReader.cpp.obj -c D:\dev\CNC\CNC_3D\src\Repository\GcodeReader.cpp
+
+CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\dev\CNC\CNC_3D\src\Repository\GcodeReader.cpp > CMakeFiles\CNC_3D.dir\src\Repository\GcodeReader.cpp.i
+
+CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\dev\CNC\CNC_3D\src\Repository\GcodeReader.cpp -o CMakeFiles\CNC_3D.dir\src\Repository\GcodeReader.cpp.s
+
 # Object files for target CNC_3D
 CNC_3D_OBJECTS = \
+"CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.obj" \
+"CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.obj" \
+"CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.obj" \
+"CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.obj" \
+"CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.obj" \
+"CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.obj" \
+"CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.obj" \
 "CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj" \
-"CMakeFiles/CNC_3D.dir/src/Program.cpp.obj"
+"CMakeFiles/CNC_3D.dir/src/Program.cpp.obj" \
+"CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.obj"
 
 # External object files for target CNC_3D
 CNC_3D_EXTERNAL_OBJECTS =
 
+CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.obj
+CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.obj
+CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.obj
+CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.obj
+CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.obj
+CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.obj
+CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.obj
 CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj
 CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Program.cpp.obj
+CNC_3D.exe: CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.obj
 CNC_3D.exe: CMakeFiles/CNC_3D.dir/build.make
 CNC_3D.exe: CMakeFiles/CNC_3D.dir/linkLibs.rsp
 CNC_3D.exe: CMakeFiles/CNC_3D.dir/objects1.rsp
 CNC_3D.exe: CMakeFiles/CNC_3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CNC_3D.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\dev\CNC\CNC_3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable CNC_3D.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CNC_3D.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

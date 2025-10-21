@@ -128,30 +128,6 @@ CNC_3D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/build
 .PHONY : CNC_3D/fast
 
-src/Common/LoadDrillBit.obj: src/Common/LoadDrillBit.cpp.obj
-.PHONY : src/Common/LoadDrillBit.obj
-
-# target to build an object file
-src/Common/LoadDrillBit.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj
-.PHONY : src/Common/LoadDrillBit.cpp.obj
-
-src/Common/LoadDrillBit.i: src/Common/LoadDrillBit.cpp.i
-.PHONY : src/Common/LoadDrillBit.i
-
-# target to preprocess a source file
-src/Common/LoadDrillBit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.i
-.PHONY : src/Common/LoadDrillBit.cpp.i
-
-src/Common/LoadDrillBit.s: src/Common/LoadDrillBit.cpp.s
-.PHONY : src/Common/LoadDrillBit.s
-
-# target to generate assembly for a file
-src/Common/LoadDrillBit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.s
-.PHONY : src/Common/LoadDrillBit.cpp.s
-
 src/Program.obj: src/Program.cpp.obj
 .PHONY : src/Program.obj
 
@@ -176,6 +152,102 @@ src/Program.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Program.cpp.s
 .PHONY : src/Program.cpp.s
 
+src/Repository/GcodeReader.obj: src/Repository/GcodeReader.cpp.obj
+.PHONY : src/Repository/GcodeReader.obj
+
+# target to build an object file
+src/Repository/GcodeReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.obj
+.PHONY : src/Repository/GcodeReader.cpp.obj
+
+src/Repository/GcodeReader.i: src/Repository/GcodeReader.cpp.i
+.PHONY : src/Repository/GcodeReader.i
+
+# target to preprocess a source file
+src/Repository/GcodeReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.i
+.PHONY : src/Repository/GcodeReader.cpp.i
+
+src/Repository/GcodeReader.s: src/Repository/GcodeReader.cpp.s
+.PHONY : src/Repository/GcodeReader.s
+
+# target to generate assembly for a file
+src/Repository/GcodeReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.s
+.PHONY : src/Repository/GcodeReader.cpp.s
+
+src/Utils/AppEnv.obj: src/Utils/AppEnv.cpp.obj
+.PHONY : src/Utils/AppEnv.obj
+
+# target to build an object file
+src/Utils/AppEnv.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.obj
+.PHONY : src/Utils/AppEnv.cpp.obj
+
+src/Utils/AppEnv.i: src/Utils/AppEnv.cpp.i
+.PHONY : src/Utils/AppEnv.i
+
+# target to preprocess a source file
+src/Utils/AppEnv.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.i
+.PHONY : src/Utils/AppEnv.cpp.i
+
+src/Utils/AppEnv.s: src/Utils/AppEnv.cpp.s
+.PHONY : src/Utils/AppEnv.s
+
+# target to generate assembly for a file
+src/Utils/AppEnv.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.s
+.PHONY : src/Utils/AppEnv.cpp.s
+
+src/Utils/Const.obj: src/Utils/Const.cpp.obj
+.PHONY : src/Utils/Const.obj
+
+# target to build an object file
+src/Utils/Const.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.obj
+.PHONY : src/Utils/Const.cpp.obj
+
+src/Utils/Const.i: src/Utils/Const.cpp.i
+.PHONY : src/Utils/Const.i
+
+# target to preprocess a source file
+src/Utils/Const.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.i
+.PHONY : src/Utils/Const.cpp.i
+
+src/Utils/Const.s: src/Utils/Const.cpp.s
+.PHONY : src/Utils/Const.s
+
+# target to generate assembly for a file
+src/Utils/Const.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.s
+.PHONY : src/Utils/Const.cpp.s
+
+src/Utils/Log.obj: src/Utils/Log.cpp.obj
+.PHONY : src/Utils/Log.obj
+
+# target to build an object file
+src/Utils/Log.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.obj
+.PHONY : src/Utils/Log.cpp.obj
+
+src/Utils/Log.i: src/Utils/Log.cpp.i
+.PHONY : src/Utils/Log.i
+
+# target to preprocess a source file
+src/Utils/Log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.i
+.PHONY : src/Utils/Log.cpp.i
+
+src/Utils/Log.s: src/Utils/Log.cpp.s
+.PHONY : src/Utils/Log.s
+
+# target to generate assembly for a file
+src/Utils/Log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.s
+.PHONY : src/Utils/Log.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +257,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CNC_3D
-	@echo ... src/Common/LoadDrillBit.obj
-	@echo ... src/Common/LoadDrillBit.i
-	@echo ... src/Common/LoadDrillBit.s
 	@echo ... src/Program.obj
 	@echo ... src/Program.i
 	@echo ... src/Program.s
+	@echo ... src/Repository/GcodeReader.obj
+	@echo ... src/Repository/GcodeReader.i
+	@echo ... src/Repository/GcodeReader.s
+	@echo ... src/Utils/AppEnv.obj
+	@echo ... src/Utils/AppEnv.i
+	@echo ... src/Utils/AppEnv.s
+	@echo ... src/Utils/Const.obj
+	@echo ... src/Utils/Const.i
+	@echo ... src/Utils/Const.s
+	@echo ... src/Utils/Log.obj
+	@echo ... src/Utils/Log.i
+	@echo ... src/Utils/Log.s
 .PHONY : help
 
 

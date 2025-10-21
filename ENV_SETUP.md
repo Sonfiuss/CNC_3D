@@ -78,7 +78,7 @@ find_package(Qt6 COMPONENTS Core Gui Qml Quick REQUIRED)
 4. Reconfigure + rebuild.
 
 ## 8. DrillBit Data Workflow
-- Binary file path: `src/Config/DrillBit/DrilBit.bin`
+- Binary file path: `src/Config/DrilBit.bin`
 - Managed via `Common::DrillBitConfig` class.
 - To refresh data: modify loader or regenerate binary from CSV (script TBD).
 
@@ -121,4 +121,4 @@ Expected: lists loaded DrillBits (if binary data present).
 - Add logging abstraction (serial/file).
 
 ---
-Maintainer Notes: Update this file when tool versions or build steps change.
+Maintainer notes: Update this file when tool versions or build steps change.

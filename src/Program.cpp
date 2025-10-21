@@ -1,14 +1,13 @@
+
+#include "Repository/GcodeReader.h"
 #include <iostream>
-#include "Common/LoadDrillBit.h"
 
 int main() {
-	std::string filename = "src/Config/DrillBit/DrilBit.bin";
-	Common::DrillBitConfig* drillConfig  = new Common::DrillBitConfig(filename);
-	auto bits = drillConfig->getAllBits();
-	std::cout << "List of DrillBits:\n";
-	for (const auto& bit : bits) {
-		std::cout << "ID: " << bit.id << ", Name: " << bit.name << ", Diameter: " << bit.diameter << std::endl;
-	}
-	delete drillConfig;
-	return 0;
+    ProgramInfo info = readGCodeFile("D:\\dev\\CNC\\CNC_3D\\src\\Config\\Gcode\\A80W133_DW_ Rev. B_POS_1.nc");
+    std::cout << "Program: " << info.program_name << std::endl;
+    std::cout << "Machine: " << info.machine << std::endl;
+    std::cout << "Material: " << info.material.material_type << std::endl;
+    std::cout << "Tool count: " << info.tools.size() << std::endl;
+    std::cout << "Zero X: " << info.zero_point.X << std::endl;
+    return 0;
 }

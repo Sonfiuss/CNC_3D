@@ -152,6 +152,102 @@ src/Common/LoadDrillBit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.s
 .PHONY : src/Common/LoadDrillBit.cpp.s
 
+src/Control/ProcessGcode.obj: src/Control/ProcessGcode.cpp.obj
+.PHONY : src/Control/ProcessGcode.obj
+
+# target to build an object file
+src/Control/ProcessGcode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.obj
+.PHONY : src/Control/ProcessGcode.cpp.obj
+
+src/Control/ProcessGcode.i: src/Control/ProcessGcode.cpp.i
+.PHONY : src/Control/ProcessGcode.i
+
+# target to preprocess a source file
+src/Control/ProcessGcode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.i
+.PHONY : src/Control/ProcessGcode.cpp.i
+
+src/Control/ProcessGcode.s: src/Control/ProcessGcode.cpp.s
+.PHONY : src/Control/ProcessGcode.s
+
+# target to generate assembly for a file
+src/Control/ProcessGcode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Control/ProcessGcode.cpp.s
+.PHONY : src/Control/ProcessGcode.cpp.s
+
+src/Model/Enum/GcodeEnum.obj: src/Model/Enum/GcodeEnum.cpp.obj
+.PHONY : src/Model/Enum/GcodeEnum.obj
+
+# target to build an object file
+src/Model/Enum/GcodeEnum.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.obj
+.PHONY : src/Model/Enum/GcodeEnum.cpp.obj
+
+src/Model/Enum/GcodeEnum.i: src/Model/Enum/GcodeEnum.cpp.i
+.PHONY : src/Model/Enum/GcodeEnum.i
+
+# target to preprocess a source file
+src/Model/Enum/GcodeEnum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.i
+.PHONY : src/Model/Enum/GcodeEnum.cpp.i
+
+src/Model/Enum/GcodeEnum.s: src/Model/Enum/GcodeEnum.cpp.s
+.PHONY : src/Model/Enum/GcodeEnum.s
+
+# target to generate assembly for a file
+src/Model/Enum/GcodeEnum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Model/Enum/GcodeEnum.cpp.s
+.PHONY : src/Model/Enum/GcodeEnum.cpp.s
+
+src/Model/GcodeParser.obj: src/Model/GcodeParser.cpp.obj
+.PHONY : src/Model/GcodeParser.obj
+
+# target to build an object file
+src/Model/GcodeParser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.obj
+.PHONY : src/Model/GcodeParser.cpp.obj
+
+src/Model/GcodeParser.i: src/Model/GcodeParser.cpp.i
+.PHONY : src/Model/GcodeParser.i
+
+# target to preprocess a source file
+src/Model/GcodeParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.i
+.PHONY : src/Model/GcodeParser.cpp.i
+
+src/Model/GcodeParser.s: src/Model/GcodeParser.cpp.s
+.PHONY : src/Model/GcodeParser.s
+
+# target to generate assembly for a file
+src/Model/GcodeParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Model/GcodeParser.cpp.s
+.PHONY : src/Model/GcodeParser.cpp.s
+
+src/Model/Gcodecomand.obj: src/Model/Gcodecomand.cpp.obj
+.PHONY : src/Model/Gcodecomand.obj
+
+# target to build an object file
+src/Model/Gcodecomand.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.obj
+.PHONY : src/Model/Gcodecomand.cpp.obj
+
+src/Model/Gcodecomand.i: src/Model/Gcodecomand.cpp.i
+.PHONY : src/Model/Gcodecomand.i
+
+# target to preprocess a source file
+src/Model/Gcodecomand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.i
+.PHONY : src/Model/Gcodecomand.cpp.i
+
+src/Model/Gcodecomand.s: src/Model/Gcodecomand.cpp.s
+.PHONY : src/Model/Gcodecomand.s
+
+# target to generate assembly for a file
+src/Model/Gcodecomand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Model/Gcodecomand.cpp.s
+.PHONY : src/Model/Gcodecomand.cpp.s
+
 src/Program.obj: src/Program.cpp.obj
 .PHONY : src/Program.obj
 
@@ -176,6 +272,102 @@ src/Program.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Program.cpp.s
 .PHONY : src/Program.cpp.s
 
+src/Repository/GcodeReader.obj: src/Repository/GcodeReader.cpp.obj
+.PHONY : src/Repository/GcodeReader.obj
+
+# target to build an object file
+src/Repository/GcodeReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.obj
+.PHONY : src/Repository/GcodeReader.cpp.obj
+
+src/Repository/GcodeReader.i: src/Repository/GcodeReader.cpp.i
+.PHONY : src/Repository/GcodeReader.i
+
+# target to preprocess a source file
+src/Repository/GcodeReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.i
+.PHONY : src/Repository/GcodeReader.cpp.i
+
+src/Repository/GcodeReader.s: src/Repository/GcodeReader.cpp.s
+.PHONY : src/Repository/GcodeReader.s
+
+# target to generate assembly for a file
+src/Repository/GcodeReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Repository/GcodeReader.cpp.s
+.PHONY : src/Repository/GcodeReader.cpp.s
+
+src/Utils/AppEnv.obj: src/Utils/AppEnv.cpp.obj
+.PHONY : src/Utils/AppEnv.obj
+
+# target to build an object file
+src/Utils/AppEnv.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.obj
+.PHONY : src/Utils/AppEnv.cpp.obj
+
+src/Utils/AppEnv.i: src/Utils/AppEnv.cpp.i
+.PHONY : src/Utils/AppEnv.i
+
+# target to preprocess a source file
+src/Utils/AppEnv.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.i
+.PHONY : src/Utils/AppEnv.cpp.i
+
+src/Utils/AppEnv.s: src/Utils/AppEnv.cpp.s
+.PHONY : src/Utils/AppEnv.s
+
+# target to generate assembly for a file
+src/Utils/AppEnv.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/AppEnv.cpp.s
+.PHONY : src/Utils/AppEnv.cpp.s
+
+src/Utils/Const.obj: src/Utils/Const.cpp.obj
+.PHONY : src/Utils/Const.obj
+
+# target to build an object file
+src/Utils/Const.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.obj
+.PHONY : src/Utils/Const.cpp.obj
+
+src/Utils/Const.i: src/Utils/Const.cpp.i
+.PHONY : src/Utils/Const.i
+
+# target to preprocess a source file
+src/Utils/Const.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.i
+.PHONY : src/Utils/Const.cpp.i
+
+src/Utils/Const.s: src/Utils/Const.cpp.s
+.PHONY : src/Utils/Const.s
+
+# target to generate assembly for a file
+src/Utils/Const.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Const.cpp.s
+.PHONY : src/Utils/Const.cpp.s
+
+src/Utils/Log.obj: src/Utils/Log.cpp.obj
+.PHONY : src/Utils/Log.obj
+
+# target to build an object file
+src/Utils/Log.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.obj
+.PHONY : src/Utils/Log.cpp.obj
+
+src/Utils/Log.i: src/Utils/Log.cpp.i
+.PHONY : src/Utils/Log.i
+
+# target to preprocess a source file
+src/Utils/Log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.i
+.PHONY : src/Utils/Log.cpp.i
+
+src/Utils/Log.s: src/Utils/Log.cpp.s
+.PHONY : src/Utils/Log.s
+
+# target to generate assembly for a file
+src/Utils/Log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNC_3D.dir\build.make CMakeFiles/CNC_3D.dir/src/Utils/Log.cpp.s
+.PHONY : src/Utils/Log.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -188,9 +380,33 @@ help:
 	@echo ... src/Common/LoadDrillBit.obj
 	@echo ... src/Common/LoadDrillBit.i
 	@echo ... src/Common/LoadDrillBit.s
+	@echo ... src/Control/ProcessGcode.obj
+	@echo ... src/Control/ProcessGcode.i
+	@echo ... src/Control/ProcessGcode.s
+	@echo ... src/Model/Enum/GcodeEnum.obj
+	@echo ... src/Model/Enum/GcodeEnum.i
+	@echo ... src/Model/Enum/GcodeEnum.s
+	@echo ... src/Model/GcodeParser.obj
+	@echo ... src/Model/GcodeParser.i
+	@echo ... src/Model/GcodeParser.s
+	@echo ... src/Model/Gcodecomand.obj
+	@echo ... src/Model/Gcodecomand.i
+	@echo ... src/Model/Gcodecomand.s
 	@echo ... src/Program.obj
 	@echo ... src/Program.i
 	@echo ... src/Program.s
+	@echo ... src/Repository/GcodeReader.obj
+	@echo ... src/Repository/GcodeReader.i
+	@echo ... src/Repository/GcodeReader.s
+	@echo ... src/Utils/AppEnv.obj
+	@echo ... src/Utils/AppEnv.i
+	@echo ... src/Utils/AppEnv.s
+	@echo ... src/Utils/Const.obj
+	@echo ... src/Utils/Const.i
+	@echo ... src/Utils/Const.s
+	@echo ... src/Utils/Log.obj
+	@echo ... src/Utils/Log.i
+	@echo ... src/Utils/Log.s
 .PHONY : help
 
 

@@ -1,0 +1,181 @@
+-- =============================================================================
+-- SCRIPT TẠO DỮ LIỆU MẪU (DUMMY DATA) - PHIÊN BẢN ĐÃ SỬA LỖI
+-- Quy ước: Sử dụng các biến psql để lưu UUID cho dễ theo dõi.
+-- =============================================================================
+
+-- Xóa dữ liệu cũ để tránh xung đột (chỉ dùng trong môi trường dev)
+-- TRUNCATE TABLE "TUSERS", "TROLES", "TITEMS", "TWAREHOUSES", "TORDERS" RESTART IDENTITY CASCADE;
+
+DO $$
+DECLARE
+    -- UUIDs for RBAC
+    user_admin_id UUID := uuid_generate_v4();
+    user_manager_id UUID := uuid_generate_v4();
+    user_staff_id UUID := uuid_generate_v4();
+    role_admin_id UUID := uuid_generate_v4();
+    role_manager_id UUID := uuid_generate_v4();
+    role_staff_id UUID := uuid_generate_v4();
+
+    -- UUIDs for Catalog
+    uom_cai_id UUID := uuid_generate_v4();
+    uom_bo_id UUID := uuid_generate_v4();
+    uom_tam_id UUID := uuid_generate_v4();
+    cat_furniture_id UUID := uuid_generate_v4();
+    cat_hardware_id UUID := uuid_generate_v4();
+    channel_website_id UUID := uuid_generate_v4();
+    channel_store_id UUID := uuid_generate_v4();
+
+    -- UUIDs for Items
+    item_template_table_id UUID := uuid_generate_v4();
+    item_product_table_id UUID := uuid_generate_v4();
+    item_component_leg_id UUID := uuid_generate_v4();
+    item_material_wood_id UUID := uuid_generate_v4();
+    item_hardware_screw_id UUID := uuid_generate_v4();
+    item_dummy_init_stock_id UUID := uuid_generate_v4(); -- Dummy item for initial stock
+
+    -- UUIDs for Design
+    design_doc_leg_id UUID := uuid_generate_v4();
+    design_ver_leg_v1_id UUID := uuid_generate_v4();
+
+    -- UUIDs for Warehouse & Customer
+    warehouse_main_id UUID := uuid_generate_v4();
+    address_wh_main_id UUID := uuid_generate_v4();
+    customer_sonfiuss_id UUID := uuid_generate_v4();
+    contact_sonfiuss_id UUID := uuid_generate_v4();
+    address_cus_sonfiuss_id UUID := uuid_generate_v4();
+
+    -- UUIDs for Production
+    work_order_leg_id UUID := uuid_generate_v4();
+    lot_leg_id UUID := uuid_generate_v4();
+    work_order_init_id UUID := uuid_generate_v4(); -- Dummy work order for initial stock
+    lot_init_id UUID := uuid_generate_v4(); -- Dummy lot for initial stock
+
+    -- UUIDs for Sales Order
+    order_id_1 UUID := uuid_generate_v4();
+    order_item_id_1 UUID := uuid_generate_v4();
+    shipment_id_1 UUID := uuid_generate_v4();
+    shipment_item_id_1 UUID := uuid_generate_v4();
+
+BEGIN
+
+-- 1. RBAC
+INSERT INTO "TUSERS" ("ID", "USERNAME", "EMAIL") VALUES
+(user_admin_id, 'admin', 'admin@example.com'),
+(user_manager_id, 'manager', 'manager@example.com'),
+(user_staff_id, 'staff', 'staff@example.com');
+
+INSERT INTO "TROLES" ("ID", "NAME", "DESCRIPTION") VALUES
+(role_admin_id, 'Administrator', 'Quản trị viên tối cao'),
+(role_manager_id, 'Production Manager', 'Quản lý sản xuất'),
+(role_staff_id, 'Warehouse Staff', 'Nhân viên kho');
+
+INSERT INTO "TUSER_ROLES" ("USER_ID", "ROLE_ID") VALUES
+(user_admin_id, role_admin_id),
+(user_manager_id, role_manager_id),
+(user_staff_id, role_staff_id);
+
+-- 2. CATALOG
+INSERT INTO "TUOMS" ("ID", "CODE", "NAME") VALUES
+(uom_cai_id, 'CAI', 'Cái'),
+(uom_bo_id, 'BO', 'Bộ'),
+(uom_tam_id, 'TAM', 'Tấm');
+
+INSERT INTO "TPRODUCT_CATEGORIES" ("ID", "NAME", "SLUG") VALUES
+(cat_furniture_id, 'Nội thất gỗ', 'noi-that-go'),
+(cat_hardware_id, 'Phụ kiện & Phần cứng', 'phu-kien');
+
+INSERT INTO "TSALES_CHANNELS" ("ID", "NAME", "PLATFORM_URL") VALUES
+(channel_website_id, 'Website', 'https://example.com'),
+(channel_store_id, 'Cửa hàng trực tiếp', NULL);
+
+-- 3. ITEMS (Product with Variants, Component, Material, Hardware)
+-- [FIX] Added NULL for PARENT_ID in rows that are not variants.
+INSERT INTO "TITEMS" ("ID", "SKU", "NAME", "ITEM_TYPE", "CATEGORY_ID", "UOM_ID", "PARENT_ID") VALUES
+(item_template_table_id, 'TBL-OAK-MASTER', 'Bàn Ăn Gỗ Sồi', 'PRODUCT_TEMPLATE', cat_furniture_id, uom_bo_id, NULL),
+(item_product_table_id, 'TBL-OAK-160', 'Bàn Ăn Gỗ Sồi 1.6m', 'PRODUCT', cat_furniture_id, uom_cai_id, item_template_table_id),
+(item_component_leg_id, 'LEG-OAK-STD', 'Chân Bàn Gỗ Sồi', 'COMPONENT', cat_furniture_id, uom_cai_id, NULL),
+(item_material_wood_id, 'WOOD-OAK-20MM', 'Gỗ Sồi Tấm dày 20mm', 'RAW_MATERIAL', cat_furniture_id, uom_tam_id, NULL),
+(item_hardware_screw_id, 'SCR-M6-20', 'Ốc Vít M6x20', 'HARDWARE', cat_hardware_id, uom_cai_id, NULL),
+(item_dummy_init_stock_id, 'INIT-STOCK-ITEM', 'Hàng Nhập Kho Ban Đầu', 'RAW_MATERIAL', NULL, uom_cai_id, NULL);
+
+-- 4. DESIGN & BOM
+INSERT INTO "TDESIGN_DOCUMENTS" ("ID", "CODE", "NAME", "CREATED_BY") VALUES
+(design_doc_leg_id, 'DSN-LEG-001', 'Thiết kế Chân Bàn Gỗ Sồi', user_manager_id);
+
+INSERT INTO "TDESIGN_DOCUMENT_VERSIONS" ("ID", "DOCUMENT_ID", "VERSION", "FILE_URI", "CREATED_BY") VALUES
+(design_ver_leg_v1_id, design_doc_leg_id, 1, 's3://my-erp-bucket/designs/DSN-LEG-001-v1.gcode', user_manager_id);
+
+INSERT INTO "TITEM_DESIGN_DOCUMENTS" ("ITEM_ID", "DESIGN_DOCUMENT_VERSION_ID", "IS_PRIMARY") VALUES
+(item_component_leg_id, design_ver_leg_v1_id, TRUE);
+
+INSERT INTO "TBOMS" ("PARENT_ITEM_ID", "CHILD_ITEM_ID", "DESIGN_DOCUMENT_VERSION_ID", "QUANTITY", "UOM_ID") VALUES
+(item_product_table_id, item_component_leg_id, design_ver_leg_v1_id, 4, uom_cai_id),
+(item_product_table_id, item_hardware_screw_id, NULL, 20, uom_cai_id);
+
+-- 5. WAREHOUSE & INITIAL INVENTORY
+INSERT INTO "TADDRESSES" ("ID", "ADDRESS_TYPE", "LINE1", "CITY") VALUES
+(address_wh_main_id, 'WAREHOUSE', 'Khu Công nghiệp Tân Bình', 'TP. Hồ Chí Minh');
+
+INSERT INTO "TWAREHOUSES" ("ID", "CODE", "NAME", "ADDRESS_ID") VALUES
+(warehouse_main_id, 'WH-MAIN', 'Kho chính', address_wh_main_id);
+
+-- Create a dummy work order and lot for initial stock to satisfy FK constraints
+INSERT INTO "TPRODUCTION_WORK_ORDERS" ("ID", "ITEM_ID", "QUANTITY", "WAREHOUSE_ID", "STATUS", "CREATED_BY") VALUES
+(work_order_init_id, item_dummy_init_stock_id, 0, warehouse_main_id, 'COMPLETED', user_admin_id);
+
+INSERT INTO "TPRODUCTION_LOTS" ("ID", "LOT_NUMBER", "WORK_ORDER_ID", "ITEM_ID", "PRODUCTION_DATE") VALUES 
+(lot_init_id, 'STOCK-INIT', work_order_init_id, item_dummy_init_stock_id, '2025-10-01');
+
+-- Add initial stock for raw material and hardware via transactions, using the dummy lot
+INSERT INTO "TINVENTORY_TRANSACTIONS" ("WAREHOUSE_ID", "ITEM_ID", "LOT_ID", "QTY_CHANGE", "REASON", "CREATED_BY") VALUES
+(warehouse_main_id, item_material_wood_id, lot_init_id, 10, 'Nhập kho ban đầu', user_staff_id),
+(warehouse_main_id, item_hardware_screw_id, lot_init_id, 500, 'Nhập kho ban đầu', user_staff_id);
+
+-- Manually update inventory balances for initial stock (as trigger might not exist)
+INSERT INTO "TINVENTORY_BALANCES" ("WAREHOUSE_ID", "ITEM_ID", "LOT_ID", "QUANTITY_ON_HAND") VALUES
+(warehouse_main_id, item_material_wood_id, lot_init_id, 10),
+(warehouse_main_id, item_hardware_screw_id, lot_init_id, 500);
+
+-- 6. PRODUCTION
+INSERT INTO "TPRODUCTION_WORK_ORDERS" ("ID", "ITEM_ID", "QUANTITY", "WAREHOUSE_ID", "DESIGN_DOCUMENT_VERSION_ID", "CREATED_BY") VALUES
+(work_order_leg_id, item_component_leg_id, 10, warehouse_main_id, design_ver_leg_v1_id, user_manager_id);
+
+INSERT INTO "TPRODUCTION_LOTS" ("ID", "LOT_NUMBER", "WORK_ORDER_ID", "ITEM_ID", "PRODUCTION_DATE") VALUES
+(lot_leg_id, 'L20251019-001', work_order_leg_id, item_component_leg_id, '2025-10-19');
+
+INSERT INTO "TPRODUCTION_CONSUMPTIONS" ("WORK_ORDER_ID", "ITEM_ID", "WAREHOUSE_ID", "QUANTITY_USED") VALUES
+(work_order_leg_id, item_material_wood_id, warehouse_main_id, 2);
+
+INSERT INTO "TPRODUCTION_OUTPUTS" ("WORK_ORDER_ID", "ITEM_ID", "LOT_ID", "WAREHOUSE_ID", "QUANTITY_PRODUCED") VALUES
+(work_order_leg_id, item_component_leg_id, lot_leg_id, warehouse_main_id, 10);
+
+-- 7. CUSTOMERS & SALES
+INSERT INTO "TCONTACTS" ("ID", "FULL_NAME", "EMAIL", "PHONE") VALUES
+(contact_sonfiuss_id, 'Sonfiuss', 'sonfiuss@email.com', '0909123456');
+
+INSERT INTO "TADDRESSES" ("ID", "ADDRESS_TYPE", "LINE1", "CITY") VALUES
+(address_cus_sonfiuss_id, 'SHIPPING', '123 Đường ABC', 'TP. Hà Nội');
+
+INSERT INTO "TCUSTOMERS" ("ID", "USER_ID", "CONTACT_ID") VALUES
+(customer_sonfiuss_id, NULL, contact_sonfiuss_id);
+
+INSERT INTO "TORDERS" ("ID", "ORDER_NUMBER", "CUSTOMER_ID", "SALES_CHANNEL_ID", "SHIPPING_ADDRESS_ID", "STATUS") VALUES
+(order_id_1, 'ORD-2025-0001', customer_sonfiuss_id, channel_website_id, address_cus_sonfiuss_id, 'CONFIRMED');
+
+INSERT INTO "TORDER_ITEMS" ("ID", "ORDER_ID", "ITEM_ID", "QUANTITY", "UNIT_PRICE", "LINE_TOTAL") VALUES
+(order_item_id_1, order_id_1, item_product_table_id, 1, 5000000, 5000000);
+
+INSERT INTO "TPAYMENTS" ("ORDER_ID", "AMOUNT", "STATUS", "PAYMENT_METHOD") VALUES
+(order_id_1, 5000000, 'PAID', 'Chuyển khoản');
+
+-- 8. SHIPMENT (Traceability)
+INSERT INTO "TSHIPMENTS" ("ID", "ORDER_ID", "WAREHOUSE_ID", "STATUS") VALUES
+(shipment_id_1, order_id_1, warehouse_main_id, 'SHIPPED');
+
+INSERT INTO "TSHIPMENT_ITEMS" ("ID", "SHIPMENT_ID", "ORDER_ITEM_ID", "QUANTITY") VALUES
+(shipment_item_id_1, shipment_id_1, order_item_id_1, 1);
+
+INSERT INTO "TSHIPMENT_ITEM_LOTS" ("SHIPMENT_ITEM_ID", "LOT_ID", "QUANTITY") VALUES
+(shipment_item_id_1, lot_leg_id, 4);
+
+END $$;

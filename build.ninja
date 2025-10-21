@@ -49,17 +49,10 @@ cmake_ninja_workdir = D$:/dev/CNC/CNC_3D/
 
 build cmake_object_order_depends_target_CNC_3D: phony || CMakeFiles/CNC_3D.dir
 
-build CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj: CXX_COMPILER__CNC_3D_unscanned_Debug D$:/dev/CNC/CNC_3D/src/Common/LoadDrillBit.cpp || cmake_object_order_depends_target_CNC_3D
-  DEP_FILE = CMakeFiles\CNC_3D.dir\src\Common\LoadDrillBit.cpp.obj.d
-  FLAGS = -g -O0 -g -fno-omit-frame-pointer -DDEBUG -std=gnu++1z -O0 -g -fno-omit-frame-pointer -DDEBUG
-  INCLUDES = -ID:/dev/CNC/CNC_3D/src/Model -ID:/dev/CNC/CNC_3D/src/Common -ID:/dev/CNC/CNC_3D/src/Control -ID:/dev/CNC/CNC_3D/src/Utils -ID:/dev/CNC/CNC_3D/src/Lib -ID:/dev/CNC/CNC_3D/src/Config
-  OBJECT_DIR = CMakeFiles\CNC_3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\CNC_3D.dir\src\Common
-
 build CMakeFiles/CNC_3D.dir/src/Program.cpp.obj: CXX_COMPILER__CNC_3D_unscanned_Debug D$:/dev/CNC/CNC_3D/src/Program.cpp || cmake_object_order_depends_target_CNC_3D
   DEP_FILE = CMakeFiles\CNC_3D.dir\src\Program.cpp.obj.d
   FLAGS = -g -O0 -g -fno-omit-frame-pointer -DDEBUG -std=gnu++1z -O0 -g -fno-omit-frame-pointer -DDEBUG
-  INCLUDES = -ID:/dev/CNC/CNC_3D/src/Model -ID:/dev/CNC/CNC_3D/src/Common -ID:/dev/CNC/CNC_3D/src/Control -ID:/dev/CNC/CNC_3D/src/Utils -ID:/dev/CNC/CNC_3D/src/Lib -ID:/dev/CNC/CNC_3D/src/Config
+  INCLUDES = -ID:/dev/CNC/CNC_3D/src/Model -ID:/dev/CNC/CNC_3D/src/Common -ID:/dev/CNC/CNC_3D/src/Control -ID:/dev/CNC/CNC_3D/src/Utils -ID:/dev/CNC/CNC_3D/src/Lib -ID:/dev/CNC/CNC_3D/src/Config -ID:/dev/CNC/CNC_3D/src/Repository
   OBJECT_DIR = CMakeFiles\CNC_3D.dir
   OBJECT_FILE_DIR = CMakeFiles\CNC_3D.dir\src
 
@@ -71,7 +64,7 @@ build CMakeFiles/CNC_3D.dir/src/Program.cpp.obj: CXX_COMPILER__CNC_3D_unscanned_
 #############################################
 # Link the executable CNC_3D.exe
 
-build CNC_3D.exe: CXX_EXECUTABLE_LINKER__CNC_3D_Debug CMakeFiles/CNC_3D.dir/src/Common/LoadDrillBit.cpp.obj CMakeFiles/CNC_3D.dir/src/Program.cpp.obj
+build CNC_3D.exe: CXX_EXECUTABLE_LINKER__CNC_3D_Debug CMakeFiles/CNC_3D.dir/src/Program.cpp.obj
   FLAGS = -g -O0 -g -fno-omit-frame-pointer -DDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CNC_3D.dir
